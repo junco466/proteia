@@ -9,6 +9,10 @@ body {
     height: 100vh;
 }
 
+.title{
+    margin-top: 150px;
+}
+
 /* NAVBAR */
 .navbar {
     display: flex;
@@ -44,10 +48,10 @@ nav a:hover {
     color: white;
 }
 
-.btn-secundario {
+.btn-secundario{
+    background: #3b82f6;
     border: 1px solid #3b82f6;
-    background: transparent;
-    color: #3b82f6;
+    color: white;
 }
 
 button {
@@ -116,9 +120,6 @@ footer {
 main{
     margin-top: 150px;
 }
-article{
-    border:#93c5fd solid 2px;
-}
 
 .productos{
     display: grid;
@@ -137,10 +138,11 @@ button{
 }
 .producto-card {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background: white;
-  padding: 15px;
+  background: rgba(15, 23, 42, 0.95);
+  padding: 30px;
   border-radius: 12px;
   margin: 10px 0;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -149,8 +151,8 @@ button{
 
 /* Imagen */
 .producto-card img {
-  width: 80px;
-  height: 80px;
+  width: 130px;
+  height: 130px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -162,6 +164,7 @@ button{
 
 .producto-card h2 {
   margin: 0;
+  margin-top: 10px;
   font-size: 18px;
 }
 

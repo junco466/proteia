@@ -30,56 +30,50 @@
         <button class="btn-principal">Probar gratis</button>
       </div>
     </nav>
-
-    <div class="botones">
-      <button class="btn-secundario" id="loginBtn">Inicia sesión</button>
-      <button class="btn-principal" onclick="empezar()">Empieza hoy</button>
-    </div>
   </header>
 
   <main>
-    <h1>Tienda de Proteínas</h1>
+
+    <h1 class="title">Tienda de Proteínas</h1>
 
     <!-- PRODUCTOS -->
     <section class="productos">
 
       <article class="producto-card">
+        <img src="https://zonafit.co/cdn/shop/files/Gold_Standard_Whey_Optimum_Nutrition_10_serv_Vanilla.jpg?v=1763585742">
         <div class="info">
           <h2>Proteína Whey 1kg</h2>
           <p>$100.000 COP</p>
-          <img
-            src="https://zonafit.co/cdn/shop/files/Gold_Standard_Whey_Optimum_Nutrition_10_serv_Vanilla.jpg?v=1763585742">
+          <div>
+            <button class="btn-secundario" onclick="agregarAlCarrito('Proteína Whey 1kg', 100000)">Añadir</button>
+          </div>
         </div>
-        <div class="accion">
-          <button onclick="agregarAlCarrito('Proteína Whey 1kg', 100000)">Añadir</button>
       </article>
-      </div>
 
       <article class="producto-card">
+        <img src="https://media.falabella.com/falabellaCL/130081391_01/w=1500,h=1500,fit=cover">
         <div class="info">
           <h2>Proteína Vegana 1kg</h2>
           <p>$120.000 COP</p>
-          <img src="https://media.falabella.com/falabellaCL/130081391_01/w=1500,h=1500,fit=cover">
+          <div>
+            <button class="btn-secundario" onclick="agregarAlCarrito('Proteína Vegana 1kg', 120000)">Añadir</button>
+          </div>
         </div>
-        <div class="accion">
-          <button onclick="agregarAlCarrito('Proteína Vegana 1kg', 120000)">Añadir</button>
       </article>
-      </div>
       </article>
 
 
       <article class="producto-card">
-
+        <img src="https://m.media-amazon.com/images/I/71NhMw+uprL._AC_UF1000,1000_QL80_.jpg">
         <div class="info">
           <h2>Proteína Isolate 2kg</h2>
           <p>$180.000 COP</p>
-          <img src="https://m.media-amazon.com/images/I/71NhMw+uprL._AC_UF1000,1000_QL80_.jpg">
+          <div>
+            <button class="btn-secundario" onclick="agregarAlCarrito('Proteína Isolate 2kg', 180000)">Añadir</button>
+          </div>
         </div>
 
-        <div class="accion">
-          <button onclick="agregarAlCarrito('Proteína Isolate 2kg', 180000)">Añadir</button>
       </article>
-      </div>
       </article>
 
     </section>
