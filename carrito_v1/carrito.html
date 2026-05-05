@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito de Proteínas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Sección de productos -->
+  <div class="productos">
+    <h1>Proteínas en venta</h1>
+    <div class="producto">
+      <h3 style="text-align: center;">Proteína Whey 1kg</h3>
+      <p style="text-align: center;">$100.000 COP</p>
+      <button onclick="agregarAlCarrito('Proteína Whey 1kg')">Añadir al carrito</button>
+    </div>
+    <div class="producto">
+      <h3 style="text-align: center;">Proteína Vegana 1kg</h3>
+      <p style="text-align: center;">$120.000 COP</p>
+      <button onclick="agregarAlCarrito('Proteína Vegana 1kg')" >Añadir al carrito</button>
+    </div>
+    <div class="producto">
+      <h3 style="text-align: center;">Proteína Isolate 2kg</h3>
+      <p style="text-align: center;">$180.000 COP</p>
+      <button onclick="agregarAlCarrito('Proteína Isolate 2kg')">Añadir al carrito</button>
+    </div>
+  </div>
+
+  <!-- Carrito -->
+  <div class="carrito">
+    <h2>Carrito de compras</h2>
+    <button onclick="vaciarCarrito()">Vaciar carrito</button>
+    <ul id="lista-carrito"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

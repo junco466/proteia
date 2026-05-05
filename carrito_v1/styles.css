@@ -1,0 +1,38 @@
+/* style.css */
+
+/* Background of the whole page */
+body {
+  background-color: #fffefe; /* dark background for contrast */
+  color: #000000; /* default text color black */
+  font-family: Arial, sans-serif;
+}
+
+/* Headings */
+h1, h2, h3{
+  color: #034fa7; /* bright yellow headings */
+  text-align: center;
+}
+
+/* Buttons */
+button, .btn {
+  background-color: #00c3ff; /* orange button */
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 0;
+}
+
+button:hover, .btn:hover {
+  background-color: #00c3ff; /* darker orange on hover */
+}
+
+/* Section backgrounds */
+.section {
+  background-color: #222; /* slightly lighter than body */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+

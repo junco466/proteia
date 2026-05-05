@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness AI PRO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="navbar-container">
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <a href="../page.html">
+                <div class="logo">
+                    <img src="../assets/logo.jpeg" alt="logo ">
+                    <span>Prote</span>IA
+                </div>
+            </a>
+            <nav>
+                <a href="../IA/proteIA.html">IA</a>
+                <a href="../carrito/pruebas.html">Tienda</a>
+                <a href="../quienessomos/quienes-somos.html">quienes somos</a>
+                <a href="../rutinas/index.html">rutinas</a>
+            </nav>
+            <div>
+                <button class="btn-principal">Probar gratis</button>
+            </div>
+        </nav>
+
+    </section>
+    <header>🔥 Fitness AI PRO</header>
+
+    <div class="top-bar">
+        <button class="primary" onclick="toggleMode()">Modo Claro/Oscuro</button>
+        <button class="primary" onclick="startTimer()">Descanso ⏱</button>
+    </div>
+
+    <div class="progress">
+        Progreso semanal: <span id="progress">0</span>%
+    </div>
+
+    <!-- IA -->
+    <div class="ai-box">
+        <h2>🤖 IA Personalizada</h2>
+
+        <select id="bodyType">
+            <option value="ecto">Ectomorfo</option>
+            <option value="meso">Mesomorfo</option>
+            <option value="endo">Endomorfo</option>
+        </select>
+
+        <select id="goal">
+            <option value="muscle">Ganar músculo</option>
+            <option value="fat">Perder grasa</option>
+            <option value="maintain">Mantener</option>
+        </select>
+
+        <br>
+        <button class="primary" onclick="generateAI()">Generar rutina</button>
+
+        <div id="aiResult"></div>
+    </div>
+
+    <!-- RUTINAS -->
+    <div class="container" id="workouts"></div>
+
+    <div class="timer" id="timer"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

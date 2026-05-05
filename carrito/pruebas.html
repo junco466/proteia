@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Proteínas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="container">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="../page.html">
+        <div class="logo">
+          <img src="../assets/logo.jpeg" alt="logo ">
+          <span>Prote</span>IA
+        </div>
+      </a>
+      <nav>
+        <a href="../IA/proteIA.html">IA</a>
+        <a href="../carrito/pruebas.html">Tienda</a>
+        <a href="../quienessomos/quienes-somos.html">quienes somos</a>
+        <a href="../rutinas/index.html">rutinas</a>
+      </nav>
+      <div>
+        <button class="btn-principal">Probar gratis</button>
+      </div>
+    </nav>
+
+    <div class="botones">
+      <button class="btn-secundario" id="loginBtn">Inicia sesión</button>
+      <button class="btn-principal" onclick="empezar()">Empieza hoy</button>
+    </div>
+  </header>
+
+  <main>
+    <h1>Tienda de Proteínas</h1>
+
+    <!-- PRODUCTOS -->
+    <section class="productos">
+
+      <article class="producto-card">
+        <div class="info">
+          <h2>Proteína Whey 1kg</h2>
+          <p>$100.000 COP</p>
+          <img
+            src="https://zonafit.co/cdn/shop/files/Gold_Standard_Whey_Optimum_Nutrition_10_serv_Vanilla.jpg?v=1763585742">
+        </div>
+        <div class="accion">
+          <button onclick="agregarAlCarrito('Proteína Whey 1kg', 100000)">Añadir</button>
+      </article>
+      </div>
+
+      <article class="producto-card">
+        <div class="info">
+          <h2>Proteína Vegana 1kg</h2>
+          <p>$120.000 COP</p>
+          <img src="https://media.falabella.com/falabellaCL/130081391_01/w=1500,h=1500,fit=cover">
+        </div>
+        <div class="accion">
+          <button onclick="agregarAlCarrito('Proteína Vegana 1kg', 120000)">Añadir</button>
+      </article>
+      </div>
+      </article>
+
+
+      <article class="producto-card">
+
+        <div class="info">
+          <h2>Proteína Isolate 2kg</h2>
+          <p>$180.000 COP</p>
+          <img src="https://m.media-amazon.com/images/I/71NhMw+uprL._AC_UF1000,1000_QL80_.jpg">
+        </div>
+
+        <div class="accion">
+          <button onclick="agregarAlCarrito('Proteína Isolate 2kg', 180000)">Añadir</button>
+      </article>
+      </div>
+      </article>
+
+    </section>
+
+    <!-- CARRITO -->
+    <aside class="carrito">
+      <h2>Carrito</h2>
+
+      <ul id="lista-carrito"></ul>
+
+      <p id="total">Total: $0</p>
+
+      <button id="vaciar">Vaciar carrito</button>
+    </aside>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
